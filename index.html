@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SecureGen AI</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🔐 SecureGen AI</h1>
+
+        <p class="subtitle">
+            Gerador Inteligente de Senhas Seguras
+        </p>
+
+        <div class="password-box">
+
+            <input
+                type="text"
+                id="password"
+                readonly
+                placeholder="Sua senha aparecerá aqui">
+
+            <button id="copyBtn">
+                Copiar
+            </button>
+
+        </div>
+
+        <div class="strength-container">
+
+            <div class="strength-bar">
+                <div id="strengthFill"></div>
+            </div>
+
+            <span id="strengthText">
+                Forte
+            </span>
+
+        </div>
+
+        <div class="settings">
+
+            <div class="range-box">
+                <label>Tamanho:</label>
+                <span id="lengthValue">16</span>
+            </div>
+
+            <input
+                type="range"
+                min="8"
+                max="64"
+                value="16"
+                id="length">
+
+            <label>
+                <input type="checkbox" id="uppercase" checked>
+                Letras Maiúsculas
+            </label>
+
+            <label>
+                <input type="checkbox" id="lowercase" checked>
+                Letras Minúsculas
+            </label>
+
+            <label>
+                <input type="checkbox" id="numbers" checked>
+                Números
+            </label>
+
+            <label>
+                <input type="checkbox" id="symbols" checked>
+                Símbolos
+            </label>
+
+        </div>
+
+        <button id="generateBtn" class="generate-btn">
+            Gerar Senha Segura
+        </button>
+
+        <div class="tips">
+
+            <h3>Boas práticas</h3>
+
+            <ul>
+                <li>Use pelo menos 16 caracteres</li>
+                <li>Combine letras, números e símbolos</li>
+                <li>Não reutilize senhas</li>
+                <li>Utilize autenticação em dois fatores</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
